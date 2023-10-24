@@ -39,8 +39,10 @@ int main()
         return 1;
     }
     for (int i = 0; i < NUM_USER; i++)
+    {
         new (&arr[i]) User(data[i].displayName, data[i].username, data[i].password);
-    // cout << arr[0];
+        cout << "Da cap phat " << sizeof(User) << " bit bo nho dia phuong cho khoi nho thu " << i + 1 << endl;
+    } // cout << arr[0];
     for (int i = 0; i < NUM_USER; i++)
     {
         cout << "User" << i << ": ";

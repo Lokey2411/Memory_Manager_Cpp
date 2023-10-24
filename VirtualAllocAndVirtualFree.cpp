@@ -40,8 +40,11 @@ int main()
     }
 
     for (int i = 0; i < NUM_USER; i++)
+    {
         new (&arr[i]) User(data[i].displayName, data[i].username, data[i].password);
-    // cout << arr[0];
+        cout << "Da cap phat " << sizeof(User) << " bit bo nho ao cho khoi nho thu " << i + 1 << endl;
+    }
+    cout << endl;
     for (int i = 0; i < NUM_USER; i++)
     {
         cout << "User" << i << ": ";
